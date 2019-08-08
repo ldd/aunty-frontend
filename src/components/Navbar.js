@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navbar = () => (
+const Navbar = ({ route, changeRoute }) => (
   <div className="hero-head">
     <header className="navbar">
       <div className="container">
@@ -20,15 +20,16 @@ const Navbar = () => (
         </div>
         <div id="navbarMenuHeroC" className="navbar-menu">
           <div className="navbar-end">
-            <a href="/" className="navbar-item is-active">
-              Home
-            </a>
-            <a href="/pricing" className="navbar-item">
-              Pricing
-            </a>
-            <a href="/integrations" className="navbar-item">
-              Integrations
-            </a>
+            {["Home", "Pricing", "Integrations"].map(link => (
+              <a
+                key={`navbar-${link}`}
+                href={`#${link}`}
+                onClick={() => changeRoute(link)}
+                className={`navbar-item ${link === route ? "is-active" : ""}`}
+              >
+                {link}
+              </a>
+            ))}
           </div>
         </div>
       </div>
