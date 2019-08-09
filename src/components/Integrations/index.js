@@ -6,17 +6,25 @@ const Integrations = () => (
     <div className="container">
       <div className="columns is-vcentered is-multiline is-centered">
         <div className="column is-full is-centered has-text-centered">
-          <div className="button is-large is-primary">Install Slack App</div>
+          <div className="button is-large is-success is-outlined">
+            Install Slack App
+          </div>
         </div>
         <div className="column is-half">
           <h1 className="title">Create tasks in seconds</h1>
           <h2 className="subtitle">Simple is best</h2>
         </div>
         <div className="column is-half">
-          {/* <img src="/screenshots/integrations-slack-create-task.png" alt="Logo" /> */}
+          <img
+            src="/screenshots/integrations-slack-create-task.png"
+            alt="Logo"
+          />
         </div>
-        <div className="column is-half">
-          {/* <img src="/screenshots/integrations-slack-confirm-task.png" alt="Logo" /> */}
+        <div className="column is-half" style={{ padding: "3.5rem" }}>
+          <img
+            src="/screenshots/integrations-slack-confirm-task.png"
+            alt="Logo"
+          />
         </div>
         <div className="column is-half">
           <h1 className="title">Check in daily</h1>
