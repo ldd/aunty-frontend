@@ -7,6 +7,9 @@ const Home = () => (
       <h2 className="subtitle">
         Change <strike>the world</strike> yourself
       </h2>
+      <div className="container" style={{ maxWidth: 350 }}>
+        <img src="/images/undraw_travel_plans_li01.svg" alt="plans" />
+      </div>
     </div>
   </div>
 );

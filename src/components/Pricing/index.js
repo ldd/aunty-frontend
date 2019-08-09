@@ -81,6 +81,9 @@ const Pricing = () => (
         <div className="column">
           <PricingEntry label="Entreprise" />
         </div>
+        <div className="column ">
+          <img src="/images/undraw_review_fkgn.svg" alt="plans" />
+        </div>
       </div>
     </div>
   </div>
