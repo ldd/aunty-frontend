@@ -10,7 +10,14 @@ const labelData = {
     featureList: ["Unlimited Users", "1 GB Total Storage", "Slack Integration"]
   },
   Entreprise: {
-    pricing: "Contact us",
+    pricing: (
+      <a
+        href="mailto:aunty@lddstudios.com"
+        style={{ color: "#ff3860", textDecoration: "underline" }}
+      >
+        Contact us
+      </a>
+    ),
     style: {
       titleColor: "#ff3860",
       actionClass: "is-outlined is-danger"
