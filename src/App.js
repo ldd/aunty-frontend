@@ -5,10 +5,12 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import Pricing from "./components/Pricing";
 import Integrations from "./components/Integrations";
+import Tasks from "./components/Tasks";
 
 const Router = ({ route }) => {
   if (route === "Pricing") return <Pricing />;
   else if (route === "Integrations") return <Integrations />;
+  else if (route === "Tasks") return <Tasks />;
   return <Home />;
 };
 

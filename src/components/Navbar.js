@@ -1,5 +1,7 @@
 import React from "react";
 
+const pages = ["Home", "Pricing", "Integrations", "Tasks"];
+
 const Navbar = ({ route, changeRoute }) => (
   <div className="hero-head">
     <header className="navbar">
@@ -20,7 +22,7 @@ const Navbar = ({ route, changeRoute }) => (
         </div>
         <div id="navbarMenuHeroC" className="navbar-menu">
           <div className="navbar-end">
-            {["Home", "Pricing", "Integrations"].map(link => (
+            {pages.map(link => (
               <a
                 key={`navbar-${link}`}
                 href={`#${link}`}
