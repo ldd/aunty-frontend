@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "../Heading";
 
 const Integrations = () => (
   // simulate is-info color for this body
@@ -11,8 +12,7 @@ const Integrations = () => (
           </div>
         </div>
         <div className="column is-half">
-          <h1 className="title">Create tasks in seconds</h1>
-          <h2 className="subtitle">Simple is best</h2>
+          <Heading title="Create tasks in seconds" subtitle="Simple is best" />
         </div>
         <div className="column is-half">
           <img
@@ -27,8 +27,7 @@ const Integrations = () => (
           />
         </div>
         <div className="column is-half">
-          <h1 className="title">Check in daily</h1>
-          <h2 className="subtitle">Or whenever you need to</h2>
+          <Heading title="Check in daily" subtitle="Or whenever you need to" />
         </div>
       </div>
     </div>

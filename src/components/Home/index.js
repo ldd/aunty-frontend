@@ -1,12 +1,17 @@
 import React from "react";
+import Heading from "../Heading";
 
 const Home = () => (
   <div className="hero-body">
     <div className="container has-text-centered">
-      <h1 className="title">Track recurrent tasks</h1>
-      <h2 className="subtitle">
-        Change <strike>the world</strike> yourself
-      </h2>
+      <Heading
+        title="Track recurrent tasks"
+        subtitle={
+          <>
+            Change <strike>the world</strike> yourself
+          </>
+        }
+      />
       <div className="container" style={{ maxWidth: 350 }}>
         <img src="/images/undraw_travel_plans_li01.svg" alt="plans" />
       </div>

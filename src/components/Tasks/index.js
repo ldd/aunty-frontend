@@ -1,4 +1,5 @@
 import React from "react";
+import Heading from "../Heading";
 
 const generateFakeData = () =>
   Array(31)
@@ -29,8 +30,7 @@ const Entry = ({ done = false }) => (
 
 const Task = ({ label, description, data = [] }) => (
   <>
-    {label && <h1 className="title">{label}</h1>}
-    {description && <h2 className="subtitle">{description}</h2>}
+    <Heading title={label} subtitle={description} />
     <div className="box" style={{ display: "flex", flexDirection: "column" }}>
       {preparedFakeData.map((weekData, j) => (
         <div key={`week-${j}`} style={{ display: "flex" }}>
