@@ -1,8 +1,6 @@
 import React from "react";
 
-const pages = ["Home", "Pricing", "Integrations", "Tasks"];
-
-const Navbar = ({ route, changeRoute }) => (
+const Navbar = ({ route, changeRoute, pages }) => (
   <div className="hero-head">
     <header className="navbar">
       <div className="container">
