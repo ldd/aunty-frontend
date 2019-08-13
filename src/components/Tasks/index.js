@@ -1,21 +1,6 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Heading from "../Heading";
-
-const generateFakeData = () =>
-  Array(31)
-    .fill(true)
-    .map(_ => Math.random() < 0.5);
-
-const prepareData = (data = []) =>
-  data.reduce(
-    (acc, n, i) =>
-      i % 7 === 0
-        ? [...acc, [n]]
-        : [...acc.slice(0, acc.length - 1), acc[acc.length - 1].concat(n)],
-    []
-  );
-
-const preparedFakeData = prepareData(generateFakeData());
+import { fakeTasks as someData, prepareData, fetchData } from "./data";
 
 const Entry = ({ done = false }) => (
   <div
@@ -32,7 +17,7 @@ const Task = ({ label, description, data = [] }) => (
   <>
     <Heading title={label} subtitle={description} />
     <div className="box" style={{ display: "flex", flexDirection: "column" }}>
-      {preparedFakeData.map((weekData, j) => (
+      {prepareData(data).map((weekData, j) => (
         <div key={`week-${j}`} style={{ display: "flex" }}>
           {weekData.map((el, day) => (
             <Entry key={`week-${j}-day-${day}`} done={el} />
@@ -42,19 +27,26 @@ const Task = ({ label, description, data = [] }) => (
     </div>
   </>
 );
-const Tasks = () => (
-  <div className="hero-body">
-    <div className="container has-text-centered">
-      <div className="columns">
-        <div className="column is-narrow">
-          <Task label="Gym" description="Go to the Gym" />
-        </div>
-        <div className="column is-narrow">
-          <Task label="Read" description="Read 10 pages" />
+
+const Tasks = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetchData(setData);
+  }, []);
+  return (
+    <div className="hero-body">
+      <div className="container has-text-centered">
+        <div className="columns">
+          {someData.map(({ id, ...rest }) => (
+            <div key={id} className="column is-narrow">
+              <Task key={id} {...rest} />
+            </div>
+          ))}
         </div>
       </div>
     </div>
-  </div>
-);
+  );
+};
 
 export default Tasks;
