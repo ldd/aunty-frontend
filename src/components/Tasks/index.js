@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import Heading from "../Heading";
-import { fakeTasks as someData, prepareData, fetchData } from "./data";
+import { prepareData, fetchData } from "./data";
+import { redirectToLogin } from "../Login";
 
 const Entry = ({ done = false }) => (
   <div
@@ -32,13 +33,13 @@ const Tasks = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetchData(setData);
+    fetchData(setData, redirectToLogin);
   }, []);
   return (
     <div className="hero-body">
       <div className="container has-text-centered">
         <div className="columns">
-          {someData.map(({ id, ...rest }) => (
+          {data.map(({ id, ...rest }) => (
             <div key={id} className="column is-narrow">
               <Task key={id} {...rest} />
             </div>

@@ -9,6 +9,12 @@ const SLACK_CLIENT_ID = "695399984727.687207103297";
 
 const SLACK_REDIRECT_URI = encodeURI(`${BACKEND_URL}/auth/slack`);
 
+export const redirectToLogin = () => {
+  // we want to force the page to reload, to the login page
+  window.location.href = "/#Login";
+  window.location.reload();
+};
+
 const Login = () => (
   <div className="hero-body">
     <div className="container has-text-centered">

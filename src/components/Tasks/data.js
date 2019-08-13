@@ -14,10 +14,14 @@ export const prepareData = (data = []) =>
 
 const TASKS_URL = "http://localhost:4000/auth/lol";
 
-export const fetchData = async (setter = () => {}) => {
+export const fetchData = async (setter = () => {}, failer = () => {}) => {
   const rawData = await fetch(TASKS_URL, { credentials: "include" });
-  const data = await rawData.json();
-  setter(data);
+  if (rawData.ok) {
+    const data = await rawData.json();
+    setter(data);
+  } else {
+    failer();
+  }
 };
 
 export const fakeTasks = [
