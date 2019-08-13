@@ -12,7 +12,7 @@ export const prepareData = (data = []) =>
     []
   );
 
-const TASKS_URL = "http://localhost:4000/auth/lol";
+const TASKS_URL = "http://localhost:4000/v1/tasks";
 
 export const fetchData = async (setter = () => {}, failer = () => {}) => {
   const rawData = await fetch(TASKS_URL, { credentials: "include" });
