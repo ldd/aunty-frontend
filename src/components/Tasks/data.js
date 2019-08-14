@@ -14,8 +14,16 @@ export const prepareData = (data = []) =>
 
 const TASKS_URL = "http://localhost:4000/v1/tasks";
 
-export const fetchData = async (setter = () => {}, failer = () => {}) => {
-  const rawData = await fetch(TASKS_URL, { credentials: "include" });
+export const fetchData = async (
+  setter = () => {},
+  failer = () => {},
+  url = TASKS_URL,
+  options = {}
+) => {
+  const rawData = await fetch(url, {
+    credentials: "include",
+    ...options
+  });
   if (rawData.ok) {
     const data = await rawData.json();
     setter(data);
@@ -23,6 +31,9 @@ export const fetchData = async (setter = () => {}, failer = () => {}) => {
     failer();
   }
 };
+
+export const deleteTask = async (id = -1, setter, failer) =>
+  fetchData(setter, failer, `${TASKS_URL}/${id}`, { method: "DELETE" });
 
 export const fakeTasks = [
   {

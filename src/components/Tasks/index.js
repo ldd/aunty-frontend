@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Heading from "../Heading";
-import { prepareData, fetchData } from "./data";
+import { prepareData, fetchData, deleteTask } from "./data";
 import { redirectToLogin } from "../Login";
 
 const Entry = ({ done = false }) => (
@@ -14,9 +14,16 @@ const Entry = ({ done = false }) => (
   />
 );
 
-const Task = ({ label, description, data = [] }) => (
+const Task = ({ label, description, data = [], deleteTask }) => (
   <>
-    <Heading title={label} subtitle={description} />
+    <div style={{ position: "relative" }}>
+      <div
+        className="delete"
+        onClick={deleteTask}
+        style={{ position: "absolute", right: 0, top: 0 }}
+      />
+      <Heading title={label} subtitle={description} />
+    </div>
     <div className="box" style={{ display: "flex", flexDirection: "column" }}>
       {prepareData(data).map((weekData, j) => (
         <div key={`week-${j}`} style={{ display: "flex" }}>
@@ -31,17 +38,23 @@ const Task = ({ label, description, data = [] }) => (
 
 const Tasks = () => {
   const [data, setData] = useState([]);
+  const [deleteId, setDeleteId] = useState(null);
 
   useEffect(() => {
     fetchData(setData, redirectToLogin);
-  }, []);
+  }, [deleteId]);
+  useEffect(() => {
+    if (typeof deleteId === "string") {
+      deleteTask(deleteId, setDeleteId);
+    }
+  }, [deleteId]);
   return (
     <div className="hero-body">
       <div className="container has-text-centered">
         <div className="columns">
           {data.map(({ id, ...rest }) => (
             <div key={id} className="column is-narrow">
-              <Task key={id} {...rest} />
+              <Task key={id} {...rest} deleteTask={() => setDeleteId(id)} />
             </div>
           ))}
         </div>
