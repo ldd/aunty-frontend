@@ -90,7 +90,11 @@ const Modal = () => {
   const hideModal = () => setModal(false);
   return (
     <>
-      <div onClick={showModal} className="button is-large is-success">
+      <div
+        onClick={showModal}
+        className="button is-large is-success is-inverted"
+        style={{ fontSize: "2.5rem" }}
+      >
         +
       </div>
       <div className={`modal ${modal ? "is-active" : ""}`}>

@@ -52,13 +52,15 @@ const Tasks = () => {
   return (
     <div className="hero-body">
       <div className="container has-text-centered">
-        <div className="columns">
+        <div className="columns is-multiline is-vcentered">
           {data.map(({ id, ...rest }) => (
             <div key={id} className="column is-narrow">
               <Task key={id} {...rest} deleteTask={() => setDeleteId(id)} />
             </div>
           ))}
-          <AddTasks />
+          <div className="column is-narrow">
+            <AddTasks />
+          </div>
         </div>
       </div>
     </div>
