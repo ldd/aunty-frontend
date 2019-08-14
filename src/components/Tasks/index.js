@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Heading from "../Heading";
+import AddTasks from "./AddTasks";
 import { prepareData, fetchData, deleteTask } from "./data";
 import { redirectToLogin } from "../Login";
 
@@ -20,7 +21,7 @@ const Task = ({ label, description, data = [], deleteTask }) => (
       <div
         className="delete"
         onClick={deleteTask}
-        style={{ position: "absolute", right: 0, top: 0 }}
+        style={{ position: "absolute", right: 0, top: -10 }}
       />
       <Heading title={label} subtitle={description} />
     </div>
@@ -57,6 +58,7 @@ const Tasks = () => {
               <Task key={id} {...rest} deleteTask={() => setDeleteId(id)} />
             </div>
           ))}
+          <AddTasks />
         </div>
       </div>
     </div>

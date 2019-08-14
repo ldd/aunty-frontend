@@ -35,6 +35,15 @@ export const fetchData = async (
 export const deleteTask = async (id = -1, setter, failer) =>
   fetchData(setter, failer, `${TASKS_URL}/${id}`, { method: "DELETE" });
 
+export const addTask = async (body, setter, failer) =>
+  fetchData(setter, failer, undefined, {
+    method: "POST",
+    body,
+    headers: {
+      "Content-Type": "application/json"
+    }
+  });
+
 export const fakeTasks = [
   {
     label: "Gym",
