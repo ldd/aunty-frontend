@@ -40,10 +40,11 @@ const Task = ({ label, description, data = [], deleteTask }) => (
 const Tasks = () => {
   const [data, setData] = useState([]);
   const [deleteId, setDeleteId] = useState(null);
+  const [addedId, setAddedId] = useState(null);
 
   useEffect(() => {
     fetchData(setData, redirectToLogin);
-  }, [deleteId]);
+  }, [deleteId, addedId]);
   useEffect(() => {
     if (typeof deleteId === "string") {
       deleteTask(deleteId, setDeleteId);
@@ -59,7 +60,7 @@ const Tasks = () => {
             </div>
           ))}
           <div className="column is-narrow">
-            <AddTasks />
+            <AddTasks onTaskAdded={setAddedId} />
           </div>
         </div>
       </div>

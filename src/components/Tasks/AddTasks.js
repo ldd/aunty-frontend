@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useCallback } from "react";
 import Heading from "../Heading";
 import { addTask } from "./data";
 
@@ -40,7 +40,7 @@ const Control = ({ onSubmit, onCancel }) => (
     </div>
   </div>
 );
-const Form = () => {
+const Form = ({ hideModal, onTaskAdded }) => {
   // field data
   const [label, setLabel] = useState("");
   const [description, setDescription] = useState("");
@@ -56,9 +56,16 @@ const Form = () => {
   };
   useEffect(() => {
     if (payload !== null) {
-      addTask(JSON.stringify(payload));
+      addTask(
+        JSON.stringify(payload),
+        (...args) => {
+          hideModal();
+          onTaskAdded(...args);
+        },
+        hideModal
+      );
     }
-  }, [payload]);
+  }, [payload, hideModal, onTaskAdded]);
 
   return (
     <div className="box">
@@ -80,14 +87,14 @@ const Form = () => {
         hint="examples: monday, wednesday, friday | daily | weekends"
         setValue={setFrequency}
       />
-      <Control onSubmit={onSubmit} />
+      <Control onSubmit={onSubmit} onCancel={hideModal} />
     </div>
   );
 };
-const Modal = () => {
+const AddTasks = ({ onTaskAdded }) => {
   const [modal, setModal] = useState(false);
   const showModal = () => setModal(true);
-  const hideModal = () => setModal(false);
+  const hideModal = useCallback(() => setModal(false), []);
   return (
     <>
       <div
@@ -101,7 +108,7 @@ const Modal = () => {
         <div className="modal-background" />
         <div className="modal-content">
           <Heading title="Add Task" />
-          <Form />
+          <Form hideModal={hideModal} onTaskAdded={onTaskAdded} />
         </div>
         <button
           onClick={hideModal}
@@ -113,4 +120,4 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default AddTasks;
