@@ -1,3 +1,5 @@
+import { BACKEND_URL } from "../Login";
+
 const generateFakeData = () =>
   Array(31)
     .fill(true)
@@ -12,7 +14,7 @@ export const prepareData = (data = []) =>
     []
   );
 
-const TASKS_URL = "http://localhost:4000/v1/tasks";
+const TASKS_URL = `${BACKEND_URL}/v1/tasks`;
 
 export const fetchData = async (
   setter = () => {},

@@ -1,6 +1,6 @@
 import React from "react";
 
-const BACKEND_URL =
+export const BACKEND_URL =
   process.env.NODE_ENV === "production"
     ? "https://lddstudios.com/api"
     : "http://localhost:4000";
