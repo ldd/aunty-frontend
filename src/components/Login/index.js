@@ -2,7 +2,7 @@ import React from "react";
 
 export const BACKEND_URL =
   process.env.NODE_ENV === "production"
-    ? "https://lddstudios.com/api"
+    ? "https://auntyapp.io/api"
     : "http://localhost:4000";
 
 const SLACK_CLIENT_ID = "695399984727.687207103297";

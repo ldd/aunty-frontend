@@ -12,7 +12,7 @@ const labelData = {
   Entreprise: {
     pricing: (
       <a
-        href="mailto:aunty@lddstudios.com"
+        href="mailto:sales@auntyapp.io"
         style={{ color: "#ff3860", textDecoration: "underline" }}
       >
         Contact us
