@@ -7,12 +7,12 @@ import Integrations from "./components/Integrations";
 import Tasks from "./components/Tasks";
 import Login from "./components/Login";
 
-const pages = ["Home", "Pricing", "Integrations", "Tasks", "Login"];
+export const pages = ["Home", "Pricing", "Integrations", "Tasks", "Login"];
 
 const parseRoute = route =>
   route === "" ? window.location.hash.slice(1) : route;
 
-const Router = ({ route }) => {
+export const Router = ({ route }) => {
   const parsedRoute = parseRoute(route);
   if (parsedRoute === "Pricing") return <Pricing />;
   else if (parsedRoute === "Integrations") return <Integrations />;
