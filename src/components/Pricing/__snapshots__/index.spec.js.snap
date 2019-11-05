@@ -1,0 +1,236 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders snapshot [empty] 1`] = `
+<div
+  className="hero-body"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="columns"
+    >
+      <div
+        className="column"
+      >
+        <div
+          className="box"
+        >
+          <div
+            className="column is-full   has-text-centered subtitle"
+            style={
+              Object {
+                "color": "#363636",
+              }
+            }
+          >
+            Community
+          </div>
+          <div
+            className="column is-full"
+          >
+             
+            Free
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                Unlimited Users
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                1 GB Total Storage
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                Slack Integration
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full  has-text-centered"
+          >
+            <div
+              className="button is-outlined"
+            >
+              Choose
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="column"
+      >
+        <div
+          className="box"
+        >
+          <div
+            className="column is-full   has-text-centered subtitle"
+            style={
+              Object {
+                "color": "#ff3860",
+              }
+            }
+          >
+            Entreprise
+          </div>
+          <div
+            className="column is-full"
+          >
+             
+            <a
+              href="mailto:sales@auntyapp.io"
+              style={
+                Object {
+                  "color": "#ff3860",
+                  "textDecoration": "underline",
+                }
+              }
+            >
+              Contact us
+            </a>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                Unlimited Users
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                5 GB Storage per User
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                Unlimited Integrations
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                Data Governance
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full"
+          >
+            <div
+              className="field"
+            >
+              <input
+                checked="checked"
+                className="is-checkradio"
+                readOnly={true}
+                type="checkbox"
+              />
+              <label>
+                Activity Logs
+              </label>
+            </div>
+          </div>
+          <div
+            className="column is-full  has-text-centered"
+          >
+            <div
+              className="button is-outlined is-danger"
+            >
+              Choose
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        className="column "
+      >
+        <img
+          alt="plans"
+          src="/images/undraw_review_fkgn.svg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

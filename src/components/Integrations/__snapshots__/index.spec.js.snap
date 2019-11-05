@@ -1,0 +1,79 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders snapshot [empty] 1`] = `
+<div
+  className="hero-body"
+  style={
+    Object {
+      "backgroundColor": "#209cee",
+    }
+  }
+>
+  <div
+    className="container"
+  >
+    <div
+      className="columns is-vcentered is-multiline is-centered"
+    >
+      <div
+        className="column is-full is-centered has-text-centered"
+      >
+        <div
+          className="button is-large is-success is-outlined"
+        >
+          Install Slack App
+        </div>
+      </div>
+      <div
+        className="column is-half"
+      >
+        <h1
+          className="title"
+        >
+          Create tasks in seconds
+        </h1>
+        <h2
+          className="subtitle"
+        >
+          Simple is best
+        </h2>
+      </div>
+      <div
+        className="column is-half"
+      >
+        <img
+          alt="Logo"
+          src="/screenshots/integrations-slack-create-task.png"
+        />
+      </div>
+      <div
+        className="column is-half"
+        style={
+          Object {
+            "padding": "3.5rem",
+          }
+        }
+      >
+        <img
+          alt="Logo"
+          src="/screenshots/integrations-slack-confirm-task.png"
+        />
+      </div>
+      <div
+        className="column is-half"
+      >
+        <h1
+          className="title"
+        >
+          Check in daily
+        </h1>
+        <h2
+          className="subtitle"
+        >
+          Or whenever you need to
+        </h2>
+      </div>
+    </div>
+  </div>
+</div>
+`;
