@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders snapshot [empty] 1`] = `null`;
+
+exports[`Heading renders snapshot [title && subtitle] 1`] = `
+Array [
+  <h1
+    className="title"
+  >
+    someTitle
+  </h1>,
+  <h2
+    className="subtitle"
+  >
+    someSubtitle
+  </h2>,
+]
+`;
