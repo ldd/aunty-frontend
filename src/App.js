@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Pricing from "./components/Pricing";
 import Integrations from "./components/Integrations";
@@ -28,7 +27,6 @@ const App = () => {
     <section className="hero is-success is-fullheight is-bold">
       <Navbar route={route} changeRoute={changeRoute} pages={pages} />
       <Router route={route} />
-      {/* <Footer /> */}
     </section>
   );
 };
