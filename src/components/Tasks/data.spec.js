@@ -47,7 +47,7 @@ describe("task helpers", () => {
   it("[addTask] attempts to add tasks", async () => {
     fetch.mockResponse(JSON.stringify(fakeTasks));
     await addTask(a => a);
-    [url, options] = fetch.mock.calls[0];
+    let [url, options] = fetch.mock.calls[0];
     expect(options).toHaveProperty("method", "POST");
   });
 });
