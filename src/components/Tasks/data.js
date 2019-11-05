@@ -1,6 +1,6 @@
 import { BACKEND_URL } from "../Login";
 
-const generateFakeData = () =>
+export const generateFakeData = () =>
   Array(31)
     .fill(true)
     .map(_ => Math.random() < 0.5);
