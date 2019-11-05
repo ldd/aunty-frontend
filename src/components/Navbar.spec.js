@@ -30,6 +30,15 @@ describe("Navbar", () => {
       })
     ).toBe(true);
   });
+  it("should render a navbar with selected pages", () => {
+    const pages = ["pageOne", "pageTwo"];
+    const wrapper = shallow(<Navbar pages={pages} route={pages[0]} />);
+    expect(
+      wrapper
+        .find(NavBarLink)
+        .someWhere(node => node.dive().hasClass("is-active"))
+    ).toBe(true);
+  });
   it("should handle user clicking on a page", () => {
     const pages = ["pageOne", "pageTwo"];
     const mockedChangeRoute = jest.fn();
