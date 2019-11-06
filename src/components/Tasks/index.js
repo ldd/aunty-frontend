@@ -4,7 +4,7 @@ import AddTasks from "./AddTasks";
 import { prepareData, fetchData, deleteTask } from "./data";
 import { redirectToLogin } from "../Login";
 
-const Entry = ({ done = false }) => (
+export const Entry = ({ done = false }) => (
   <div
     style={{
       width: 12,
@@ -15,7 +15,7 @@ const Entry = ({ done = false }) => (
   />
 );
 
-const Task = ({ label, description, data = [], deleteTask }) => (
+export const Task = ({ label, description, data = [], deleteTask }) => (
   <>
     <div style={{ position: "relative" }}>
       <div
@@ -37,8 +37,8 @@ const Task = ({ label, description, data = [], deleteTask }) => (
   </>
 );
 
-const Tasks = () => {
-  const [data, setData] = useState([]);
+const Tasks = ({ initialData = [] }) => {
+  const [data, setData] = useState(initialData);
   const [deleteId, setDeleteId] = useState(null);
   const [addedId, setAddedId] = useState(null);
 

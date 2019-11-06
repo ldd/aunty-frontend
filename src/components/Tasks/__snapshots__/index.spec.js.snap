@@ -1,0 +1,650 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading renders snapshot [entry] 1`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "rgba(0,200,0,0.2)",
+      "height": 12,
+      "margin": 1.5,
+      "width": 12,
+    }
+  }
+/>
+`;
+
+exports[`Heading renders snapshot [task with data] 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      className="delete"
+      style={
+        Object {
+          "position": "absolute",
+          "right": 0,
+          "top": -10,
+        }
+      }
+    />
+  </div>,
+  <div
+    className="box"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  >
+    <div
+      style={
+        Object {
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+    </div>
+    <div
+      style={
+        Object {
+          "display": "flex",
+        }
+      }
+    >
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+      <div
+        style={
+          Object {
+            "backgroundColor": "rgba(0,200,0,0.2)",
+            "height": 12,
+            "margin": 1.5,
+            "width": 12,
+          }
+        }
+      />
+    </div>
+  </div>,
+]
+`;
+
+exports[`Heading renders snapshot [task] 1`] = `
+Array [
+  <div
+    style={
+      Object {
+        "position": "relative",
+      }
+    }
+  >
+    <div
+      className="delete"
+      style={
+        Object {
+          "position": "absolute",
+          "right": 0,
+          "top": -10,
+        }
+      }
+    />
+  </div>,
+  <div
+    className="box"
+    style={
+      Object {
+        "display": "flex",
+        "flexDirection": "column",
+      }
+    }
+  />,
+]
+`;
+
+exports[`Heading renders snapshot [task] 2`] = `
+<div
+  style={
+    Object {
+      "backgroundColor": "rgba(0,200,0,0.2)",
+      "height": 12,
+      "margin": 1.5,
+      "width": 12,
+    }
+  }
+/>
+`;
+
+exports[`Heading renders snapshot [tasks] 1`] = `
+<div
+  className="hero-body"
+>
+  <div
+    className="container has-text-centered"
+  >
+    <div
+      className="columns is-multiline is-vcentered"
+    >
+      <div
+        className="column is-narrow"
+      >
+        <div
+          className="button is-large is-success is-inverted"
+          onClick={[Function]}
+          style={
+            Object {
+              "fontSize": "2.5rem",
+            }
+          }
+        >
+          +
+        </div>
+        <div
+          className="modal "
+        >
+          <div
+            className="modal-background"
+          />
+          <div
+            className="modal-content"
+          >
+            <h1
+              className="title"
+            >
+              Add Task
+            </h1>
+            <div
+              className="box"
+            >
+              <div
+                className="field"
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              >
+                <label
+                  className="label"
+                >
+                  Label
+                </label>
+                <div
+                  className="control has-icons-left has-icons-right"
+                >
+                  <input
+                    className="input is-success"
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="icon is-small is-left"
+                  >
+                    <i
+                      className="fas fa-user"
+                    />
+                  </span>
+                  <span
+                    className="icon is-small is-right"
+                  >
+                    <i
+                      className="fas fa-check"
+                    />
+                  </span>
+                </div>
+                <p
+                  className="help is-dark"
+                >
+                  example: read
+                </p>
+              </div>
+              <div
+                className="field"
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              >
+                <label
+                  className="label"
+                >
+                  Description
+                </label>
+                <div
+                  className="control has-icons-left has-icons-right"
+                >
+                  <input
+                    className="input is-success"
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="icon is-small is-left"
+                  >
+                    <i
+                      className="fas fa-user"
+                    />
+                  </span>
+                  <span
+                    className="icon is-small is-right"
+                  >
+                    <i
+                      className="fas fa-check"
+                    />
+                  </span>
+                </div>
+                <p
+                  className="help is-dark"
+                >
+                  example: read at least 10 pages
+                </p>
+              </div>
+              <div
+                className="field"
+                style={
+                  Object {
+                    "textAlign": "left",
+                  }
+                }
+              >
+                <label
+                  className="label"
+                >
+                  Frequency
+                </label>
+                <div
+                  className="control has-icons-left has-icons-right"
+                >
+                  <input
+                    className="input is-success"
+                    onChange={[Function]}
+                    type="text"
+                    value=""
+                  />
+                  <span
+                    className="icon is-small is-left"
+                  >
+                    <i
+                      className="fas fa-user"
+                    />
+                  </span>
+                  <span
+                    className="icon is-small is-right"
+                  >
+                    <i
+                      className="fas fa-check"
+                    />
+                  </span>
+                </div>
+                <p
+                  className="help is-dark"
+                >
+                  examples: monday, wednesday, friday | daily | weekends
+                </p>
+              </div>
+              <div
+                className="field is-grouped is-grouped-right"
+              >
+                <div
+                  className="control"
+                >
+                  <div
+                    className="button is-light"
+                    onClick={[Function]}
+                  >
+                    Cancel
+                  </div>
+                </div>
+                <div
+                  className="control"
+                >
+                  <div
+                    className="button is-primary"
+                    onClick={[Function]}
+                  >
+                    Submit
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            aria-label="close"
+            className="modal-close is-large"
+            onClick={[Function]}
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
