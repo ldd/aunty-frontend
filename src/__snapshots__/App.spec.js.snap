@@ -1,0 +1,112 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App renders snapshot 1`] = `
+<section
+  className="hero is-success is-fullheight is-bold"
+>
+  <div
+    className="hero-head"
+  >
+    <header
+      className="navbar"
+    >
+      <div
+        className="container"
+      >
+        <div
+          className="navbar-brand"
+          onClick={[Function]}
+        >
+          <span
+            className="navbar-burger burger "
+            data-target="navbarMenuHeroC"
+          >
+            <span />
+            <span />
+            <span />
+          </span>
+        </div>
+        <div
+          className="navbar-menu "
+          id="navbarMenuHeroC"
+        >
+          <div
+            className="navbar-end"
+          >
+            <a
+              className="navbar-item "
+              href="#Home"
+              onClick={[Function]}
+            >
+              Home
+            </a>
+            <a
+              className="navbar-item "
+              href="#Pricing"
+              onClick={[Function]}
+            >
+              Pricing
+            </a>
+            <a
+              className="navbar-item "
+              href="#Integrations"
+              onClick={[Function]}
+            >
+              Integrations
+            </a>
+            <a
+              className="navbar-item "
+              href="#Tasks"
+              onClick={[Function]}
+            >
+              Tasks
+            </a>
+            <a
+              className="navbar-item "
+              href="#Login"
+              onClick={[Function]}
+            >
+              Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <div
+    className="hero-body"
+  >
+    <div
+      className="container has-text-centered"
+    >
+      <h1
+        className="title"
+      >
+        Track recurrent tasks
+      </h1>
+      <h2
+        className="subtitle"
+      >
+        Change 
+        <strike>
+          the world
+        </strike>
+         yourself
+      </h2>
+      <div
+        className="container"
+        style={
+          Object {
+            "maxWidth": 350,
+          }
+        }
+      >
+        <img
+          alt="plans"
+          src="/images/undraw_travel_plans_li01.svg"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+`;

@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
-// import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Pricing from "./components/Pricing";
 import Integrations from "./components/Integrations";
 import Tasks from "./components/Tasks";
 import Login from "./components/Login";
 
-const pages = ["Home", "Pricing", "Integrations", "Tasks", "Login"];
+export const pages = ["Home", "Pricing", "Integrations", "Tasks", "Login"];
 
 const parseRoute = route =>
   route === "" ? window.location.hash.slice(1) : route;
 
-const Router = ({ route }) => {
+export const Router = ({ route }) => {
   const parsedRoute = parseRoute(route);
   if (parsedRoute === "Pricing") return <Pricing />;
   else if (parsedRoute === "Integrations") return <Integrations />;
@@ -28,7 +27,6 @@ const App = () => {
     <section className="hero is-success is-fullheight is-bold">
       <Navbar route={route} changeRoute={changeRoute} pages={pages} />
       <Router route={route} />
-      {/* <Footer /> */}
     </section>
   );
 };

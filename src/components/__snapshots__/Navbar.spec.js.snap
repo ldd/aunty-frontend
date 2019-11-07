@@ -1,0 +1,88 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navbar renders snapshot [empty] 1`] = `
+<div
+  className="hero-head"
+>
+  <header
+    className="navbar"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="navbar-brand"
+        onClick={[Function]}
+      >
+        <span
+          className="navbar-burger burger "
+          data-target="navbarMenuHeroC"
+        >
+          <span />
+          <span />
+          <span />
+        </span>
+      </div>
+      <div
+        className="navbar-menu "
+        id="navbarMenuHeroC"
+      >
+        <div
+          className="navbar-end"
+        />
+      </div>
+    </div>
+  </header>
+</div>
+`;
+
+exports[`Navbar renders snapshot [pages] 1`] = `
+<div
+  className="hero-head"
+>
+  <header
+    className="navbar"
+  >
+    <div
+      className="container"
+    >
+      <div
+        className="navbar-brand"
+        onClick={[Function]}
+      >
+        <span
+          className="navbar-burger burger "
+          data-target="navbarMenuHeroC"
+        >
+          <span />
+          <span />
+          <span />
+        </span>
+      </div>
+      <div
+        className="navbar-menu "
+        id="navbarMenuHeroC"
+      >
+        <div
+          className="navbar-end"
+        >
+          <a
+            className="navbar-item "
+            href="#pageOne"
+            onClick={[Function]}
+          >
+            pageOne
+          </a>
+          <a
+            className="navbar-item "
+            href="#pageTwo"
+            onClick={[Function]}
+          >
+            pageTwo
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+</div>
+`;

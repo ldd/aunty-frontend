@@ -2,7 +2,7 @@ import React, { useEffect, useState, useCallback } from "react";
 import Heading from "../Heading";
 import { addTask } from "./data";
 
-const Field = ({ label, value, setValue, hint }) => {
+export const Field = ({ label, value, setValue, hint }) => {
   const onChange = e => setValue(e.target.value);
   return (
     <div className="field" style={{ textAlign: "left" }}>
@@ -26,7 +26,7 @@ const Field = ({ label, value, setValue, hint }) => {
   );
 };
 
-const Control = ({ onSubmit, onCancel }) => (
+export const Control = ({ onSubmit, onCancel }) => (
   <div className="field is-grouped is-grouped-right">
     <div className="control">
       <div onClick={onCancel} className="button is-light">
@@ -40,7 +40,8 @@ const Control = ({ onSubmit, onCancel }) => (
     </div>
   </div>
 );
-const Form = ({ hideModal, onTaskAdded }) => {
+
+export const Form = ({ hideModal, onTaskAdded }) => {
   // field data
   const [label, setLabel] = useState("");
   const [description, setDescription] = useState("");
@@ -91,7 +92,7 @@ const Form = ({ hideModal, onTaskAdded }) => {
     </div>
   );
 };
-const AddTasks = ({ onTaskAdded }) => {
+const AddTasks = ({ onTaskAdded = () => {} }) => {
   const [modal, setModal] = useState(false);
   const showModal = () => setModal(true);
   const hideModal = useCallback(() => setModal(false), []);

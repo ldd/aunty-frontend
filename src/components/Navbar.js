@@ -1,6 +1,6 @@
 import React, { useState, useCallback } from "react";
 
-const NavBarBurger = ({ menuStatus }) => (
+export const NavBarBurger = ({ menuStatus }) => (
   <span
     className={`navbar-burger burger ${menuStatus}`}
     data-target="navbarMenuHeroC"
@@ -12,7 +12,7 @@ const NavBarBurger = ({ menuStatus }) => (
   </span>
 );
 
-const NavBarLink = ({ changeRoute, route, link }) => (
+export const NavBarLink = ({ changeRoute, route, link }) => (
   <a
     href={`#${link}`}
     onClick={changeRoute}
@@ -22,7 +22,7 @@ const NavBarLink = ({ changeRoute, route, link }) => (
   </a>
 );
 
-const Navbar = ({ route, changeRoute, pages }) => {
+const Navbar = ({ route, changeRoute, pages = [] }) => {
   const [menuStatus, toggleMenuStatus] = useState("");
 
   const menuHandler = useCallback(() => {

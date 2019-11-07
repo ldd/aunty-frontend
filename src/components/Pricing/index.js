@@ -46,8 +46,8 @@ const Feature = ({ description }) => (
   </div>
 );
 
-const PricingEntry = ({ label }) => {
-  const { pricing, style, featureList = [] } = labelData[label];
+export const PricingEntry = ({ label }) => {
+  const { pricing, style, featureList = [] } = labelData[label] || {};
   const { titleColor: color, actionClass } = style || {};
   return (
     <div className="box">
@@ -71,16 +71,15 @@ const PricingEntry = ({ label }) => {
   );
 };
 
-const Pricing = () => (
+const Pricing = ({ labels = ["Community", "Entreprise"] }) => (
   <div className="hero-body">
     <div className="container">
       <div className="columns">
-        <div className="column">
-          <PricingEntry label="Community" />
-        </div>
-        <div className="column">
-          <PricingEntry label="Entreprise" />
-        </div>
+        {labels.map(label => (
+          <div className="column" key={`pricing-entry-container-${label}`}>
+            <PricingEntry label={label} />
+          </div>
+        ))}
         <div className="column ">
           <img src="/images/undraw_review_fkgn.svg" alt="plans" />
         </div>
