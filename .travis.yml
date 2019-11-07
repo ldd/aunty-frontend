@@ -5,4 +5,5 @@ cache:
   directories:
     - node_modules
 script:
-  - CI=true yarn test
+  - CI=true yarn test:coverage --coverageReporters=text-lcov | coveralls
+
