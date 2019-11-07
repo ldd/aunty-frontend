@@ -428,19 +428,6 @@ Array [
 ]
 `;
 
-exports[`Heading renders snapshot [task] 2`] = `
-<div
-  style={
-    Object {
-      "backgroundColor": "rgba(0,200,0,0.2)",
-      "height": 12,
-      "margin": 1.5,
-      "width": 12,
-    }
-  }
-/>
-`;
-
 exports[`Heading renders snapshot [tasks] 1`] = `
 <div
   className="hero-body"
